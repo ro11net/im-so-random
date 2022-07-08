@@ -94,7 +94,7 @@ And if I run it again:
 
 ```shell
 ./main.sh 
-source <(cat /root/bash-test/source/*)
+source <(cat /usr/lib/app/scripts/source/*)
 source already present in the root bashrc
 ```
 
@@ -102,7 +102,7 @@ and again...
 
 ```shell
 ./main.sh 
-source <(cat /root/bash-test/source/*)
+source <(cat /usr/lib/app/scripts/source/*)
 source already present in the root bashrc
 ```
 
