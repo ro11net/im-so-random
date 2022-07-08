@@ -67,9 +67,11 @@ source <(cat /usr/lib/app/scripts/source/*)
 ```
 
 I would rather check to see if the line exists already so I will use grep to accomplish that for me:
-
-> **NOTE** Make sure you place an escape character "\" before the asterisk or it will not read right
-
+#
+> **NOTE** Make sure you place an escape character "\\" before the asterisk or it will not read right.
+#
+> **ADDITIONAL NOTE** I am just now finding out, you also need an escape character to escape an escape character in Markdown (It would look like this "\\\\"). So I guess that's pretty neat.
+#
 ```bash
 update_bashrc () {
 	if ! grep -e "source <(cat /usr/lib/app/scripts/source/\*)" /root/.bashrc; then
